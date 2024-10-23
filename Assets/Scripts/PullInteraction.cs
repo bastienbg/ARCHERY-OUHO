@@ -12,11 +12,14 @@ public class PullInteraction : XRBaseInteractable
 
     private LineRenderer _lineRenderer;
     private IXRSelectInteractor pullingInteractor = null;
+    private ArrowSpawner _arrowSpawner;
 
     protected override void Awake()
     {
         base.Awake();
         _lineRenderer = GetComponent<LineRenderer>();
+
+        _arrowSpawner = GetComponentInParent<ArrowSpawner>();
     }
 
     public void SetPullInteractor(SelectEnterEventArgs args)
@@ -26,11 +29,20 @@ public class PullInteraction : XRBaseInteractable
 
     public void Release()
     {
+        Debug.Log("Release called with pullAmount: " + pullAmount);
         PullActionReleased?.Invoke(pullAmount);
         pullingInteractor = null;
         pullAmount = 0f;
         notch.transform.localPosition = new Vector3(notch.transform.localPosition.x, notch.transform.localPosition.y, 0f);
         UpdateString();
+        if (_arrowSpawner != null)
+        {
+            _arrowSpawner.NotchEmpty(1f);  // Reset notch state after release
+        }
+        else
+        {
+            Debug.LogError("ArrowSpawner reference is missing!");
+        }
     }
 
     public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
@@ -43,6 +55,7 @@ public class PullInteraction : XRBaseInteractable
             {
                 Vector3 pullPosition = pullingInteractor.transform.position;
                 pullAmount = CalculatePull(pullPosition);
+                Debug.Log("Pulling string with pullAmount: " + pullAmount);
                 UpdateString();
             }
         }

@@ -16,7 +16,11 @@ public class ArrowSpawner : MonoBehaviour
     {
         _bow = GetComponentInParent<XRGrabInteractable>();
         PullInteraction.PullActionReleased += NotchEmpty;
+        Debug.Log("ArrowSpawner initialized");
+
+        
     }
+
 
     void OnDestroy()
     {
@@ -28,25 +32,37 @@ public class ArrowSpawner : MonoBehaviour
     {
         if (_bow.isSelected && !_arrowNotched)
         {
-            StartCoroutine("DelayedSpawn");
+            Debug.Log("Bow is selected, spawning arrow");
+            StartCoroutine(DelayedSpawn());
+
+            Debug.Log("StartCoroutine(DelayedSpawn()) called");
         }
         if (!_bow.isSelected && _currentArrow != null)
         {
+            Debug.Log("Bow is deselected, destroying arrow");
             Destroy(_currentArrow);
             NotchEmpty(1f);
+            Debug.Log("Arrow destroyed and Notch reset");
         }
     }
 
-    private void NotchEmpty(float value)
+    public void NotchEmpty(float value)
     {
         _arrowNotched = false;
         _currentArrow = null;
     }
 
-    IEnumerable DelayedSpawn()
+    IEnumerator DelayedSpawn()
     {
+        Debug.Log("DelayedSpawn() called");
         _arrowNotched = true;
-        yield return null;
+        yield return new WaitForSeconds(0.1f);
+        if (arrow == null)
+        {
+            Debug.LogError("Arrow prefab is not assigned!");
+            yield break;
+        }
         _currentArrow = Instantiate(arrow, notch.transform);
+        Debug.Log("Arrow spawned at position: " + _currentArrow.transform.position);
     }
 }

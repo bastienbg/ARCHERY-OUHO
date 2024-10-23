@@ -24,13 +24,20 @@ public class Arrow : MonoBehaviour
 
     private void Release(float value)
     {
+        Debug.Log("Arrow released with force multiplier: " + value);
         PullInteraction.PullActionReleased -= Release;
+
+        // Set the Rigidbody to non-kinematic so it can be affected by physics
+        _rigidBody.isKinematic = false;
+
         gameObject.transform.parent = null;
         _inAir = true;
         SetPhysics(true);
 
+        // Apply the force for the arrow to fly
         Vector3 force = transform.forward * value * speed;
         _rigidBody.AddForce(force, ForceMode.Impulse);
+        Debug.Log("Arrow force applied: " + force);
 
         StartCoroutine(RotateWithVelocity());
 
@@ -61,10 +68,12 @@ public class Arrow : MonoBehaviour
     {
         if (Physics.Linecast(_lastPosition, tip.position, out RaycastHit hitInfo))
         {
+            Debug.Log("Arrow collision detected at: " + hitInfo.point);
             if (hitInfo.transform.gameObject.layer != 8)
             {
                 if (hitInfo.transform.TryGetComponent(out Rigidbody body))
                 {
+                    Debug.Log("Arrow hit a rigidbody: " + hitInfo.transform.name);
                     _rigidBody.interpolation = RigidbodyInterpolation.None;
                     transform.parent = hitInfo.transform;
                     body.AddForce(_rigidBody.velocity, ForceMode.Impulse);
@@ -76,13 +85,14 @@ public class Arrow : MonoBehaviour
 
     private void Stop()
     {
+        Debug.Log("Arrow stopped in air");
         _inAir = false;
-        SetPhysics(false);
+        SetPhysics(false);  // Stop movement by setting physics to inactive
     }
 
     private void SetPhysics(bool usePhysics)
     {
         _rigidBody.useGravity = usePhysics;
-        _rigidBody.isKinematic = !usePhysics;
+        _rigidBody.isKinematic = !usePhysics;  // Set the Rigidbody to non-kinematic if physics is used
     }
 }
