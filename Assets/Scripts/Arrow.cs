@@ -5,14 +5,22 @@ public class Arrow : MonoBehaviour
 {
     public float speed = 10f;
     public Transform tip;
+    public new ParticleSystem particleSystem;
+    public TrailRenderer trailRenderer;
 
     private Rigidbody _rigidBody;
     private bool _inAir = false;
     private Vector3 _lastPosition = Vector3.zero;
 
+    private ParticleSystem _particleSystem;
+    private TrailRenderer _trailRenderer;
+
     private void Awake()
     {
         _rigidBody = GetComponent<Rigidbody>();
+        _particleSystem = particleSystem;
+        _trailRenderer = trailRenderer;
+
         PullInteraction.PullActionReleased += Release;
         Stop();
     }
@@ -42,6 +50,9 @@ public class Arrow : MonoBehaviour
         StartCoroutine(RotateWithVelocity());
 
         _lastPosition = tip.position;
+
+        _particleSystem.Play();
+        _trailRenderer.emitting = true;
     }
 
     private IEnumerator RotateWithVelocity()
@@ -88,11 +99,15 @@ public class Arrow : MonoBehaviour
         Debug.Log("Arrow stopped in air");
         _inAir = false;
         SetPhysics(false);  // Stop movement by setting physics to inactive
+
+        _particleSystem.Stop();
+        _trailRenderer.emitting = false;
     }
 
     private void SetPhysics(bool usePhysics)
     {
         _rigidBody.useGravity = usePhysics;
         _rigidBody.isKinematic = !usePhysics;  // Set the Rigidbody to non-kinematic if physics is used
+        Debug.Log("Physics set: useGravity = " + _rigidBody.useGravity + ", isKinematic = " + _rigidBody.isKinematic);
     }
 }

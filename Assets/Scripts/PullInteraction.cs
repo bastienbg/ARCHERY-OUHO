@@ -11,8 +11,11 @@ public class PullInteraction : XRBaseInteractable
     public float pullAmount { get; private set; } = 0.0f;
 
     private LineRenderer _lineRenderer;
-    private IXRSelectInteractor pullingInteractor = null;
+    private IXRSelectInteractor _pullingInteractor = null;
     private ArrowSpawner _arrowSpawner;
+
+    private AudioSource _audioSource;
+
 
     protected override void Awake()
     {
@@ -20,18 +23,19 @@ public class PullInteraction : XRBaseInteractable
         _lineRenderer = GetComponent<LineRenderer>();
 
         _arrowSpawner = GetComponentInParent<ArrowSpawner>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     public void SetPullInteractor(SelectEnterEventArgs args)
     {
-        pullingInteractor = args.interactorObject;
+        _pullingInteractor = args.interactorObject;
     }
 
     public void Release()
     {
         Debug.Log("Release called with pullAmount: " + pullAmount);
         PullActionReleased?.Invoke(pullAmount);
-        pullingInteractor = null;
+        _pullingInteractor = null;
         pullAmount = 0f;
         notch.transform.localPosition = new Vector3(notch.transform.localPosition.x, notch.transform.localPosition.y, 0f);
         UpdateString();
@@ -43,6 +47,8 @@ public class PullInteraction : XRBaseInteractable
         {
             Debug.LogError("ArrowSpawner reference is missing!");
         }
+
+        PlayRSound();
     }
 
     public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
@@ -53,10 +59,12 @@ public class PullInteraction : XRBaseInteractable
         {
             if (isSelected)
             {
-                Vector3 pullPosition = pullingInteractor.transform.position;
+                Vector3 pullPosition = _pullingInteractor.transform.position;
                 pullAmount = CalculatePull(pullPosition);
                 Debug.Log("Pulling string with pullAmount: " + pullAmount);
                 UpdateString();
+
+                Haptic();
             }
         }
     }
@@ -78,4 +86,19 @@ public class PullInteraction : XRBaseInteractable
         notch.transform.localPosition = new Vector3(notch.transform.localPosition.x, notch.transform.localPosition.y, linePosition.z + .2f);
         _lineRenderer.SetPosition(1, linePosition);
     }
+
+
+    private void Haptic()
+    {
+        if(_pullingInteractor != null)
+        {
+            ActionBasedController currentController =_pullingInteractor.transform.gameObject.GetComponent<ActionBasedController>();
+            currentController.SendHapticImpulse(pullAmount, .1f);
+        }
+    }
+    private void PlayRSound()
+    {
+        _audioSource.Play();
+    }
+
 }
