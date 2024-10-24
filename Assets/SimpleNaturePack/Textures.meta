@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/SimpleNaturePack/Textures.meta
 guid: 2d44b6cffc02046488649c55d0f4d79e
+========
+guid: fe24fd3997b15734ca1cafbde3b128d7
+>>>>>>>> terrain:Assets/AureDevGames/Water Stylized Shader Orto & Perspective Camera/Textures.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

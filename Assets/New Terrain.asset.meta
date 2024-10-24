@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/New Terrain.asset.meta
 guid: bfde4fe6ad6384149b95bb828f4db074
+========
+guid: bdb7498aa013983459ccf260bacfc35f
+>>>>>>>> terrain:Assets/AureDevGames/Water Stylized Shader Orto & Perspective Camera/Textures/Rock/RockVolcanic.terrainlayer.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 15600000

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Bow-and-Arrow-Assets-main/Material.meta
 guid: 5cd586e8ba5ef614baa714534cf02441
+========
+guid: 758e070c798449f45b7c6c74611c6f24
+>>>>>>>> terrain:Assets/IgniteCoders.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

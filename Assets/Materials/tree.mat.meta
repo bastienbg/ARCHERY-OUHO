@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/SimpleNaturePack/Scenes/SimpleNaturePack_DemoSettings.lighting.meta
+guid: 6252d3a9f731df94cadf598d03341bf2
+========
+guid: 03640de4485f51d4eb53a5e8127ce2e6
+>>>>>>>> terrain:Assets/Materials/tree.mat.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

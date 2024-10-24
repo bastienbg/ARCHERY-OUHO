@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/LowlyPoly/Stylized Grass Texture/Textures/Vol_42_1_Height.png.meta
 guid: c24c005cb31b0514a85361709b63fa93
+========
+guid: a6525c3c7816b3240b43acfdedaedc60
+>>>>>>>> terrain:Assets/Mountain Terrain rocks and tree/Materials/Rock/rock_set_mat_AO.png.meta
 TextureImporter:
-  fileIDToRecycleName: {}
+  internalIDToNameTable: []
   externalObjects: {}
+<<<<<<<< HEAD:Assets/LowlyPoly/Stylized Grass Texture/Textures/Vol_42_1_Height.png.meta
   serializedVersion: 9
+========
+  serializedVersion: 12
+>>>>>>>> terrain:Assets/Mountain Terrain rocks and tree/Materials/Rock/rock_set_mat_AO.png.meta
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -23,6 +31,11 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+<<<<<<<< HEAD:Assets/LowlyPoly/Stylized Grass Texture/Textures/Vol_42_1_Height.png.meta
+========
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+>>>>>>>> terrain:Assets/Mountain Terrain rocks and tree/Materials/Rock/rock_set_mat_AO.png.meta
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -31,12 +44,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<<< HEAD:Assets/LowlyPoly/Stylized Grass Texture/Textures/Vol_42_1_Height.png.meta
     filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: -1
     wrapV: -1
     wrapW: -1
+========
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+>>>>>>>> terrain:Assets/Mountain Terrain rocks and tree/Materials/Rock/rock_set_mat_AO.png.meta
   nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
@@ -54,11 +76,24 @@ TextureImporter:
   textureType: 0
   textureShape: 1
   singleChannelComponent: 0
+<<<<<<<< HEAD:Assets/LowlyPoly/Stylized Grass Texture/Textures/Vol_42_1_Height.png.meta
+========
+  flipbookRows: 1
+  flipbookColumns: 1
+>>>>>>>> terrain:Assets/Mountain Terrain rocks and tree/Materials/Rock/rock_set_mat_AO.png.meta
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
   platformSettings:
+<<<<<<<< HEAD:Assets/LowlyPoly/Stylized Grass Texture/Textures/Vol_42_1_Height.png.meta
   - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+========
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -69,6 +104,32 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+>>>>>>>> terrain:Assets/Mountain Terrain rocks and tree/Materials/Rock/rock_set_mat_AO.png.meta
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -76,10 +137,19 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 
+<<<<<<<< HEAD:Assets/LowlyPoly/Stylized Grass Texture/Textures/Vol_42_1_Height.png.meta
+========
+    internalID: 0
+>>>>>>>> terrain:Assets/Mountain Terrain rocks and tree/Materials/Rock/rock_set_mat_AO.png.meta
     vertices: []
     indices: 
     edges: []
     weights: []
+<<<<<<<< HEAD:Assets/LowlyPoly/Stylized Grass Texture/Textures/Vol_42_1_Height.png.meta
+========
+    secondaryTextures: []
+    nameFileIdTable: {}
+>>>>>>>> terrain:Assets/Mountain Terrain rocks and tree/Materials/Rock/rock_set_mat_AO.png.meta
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

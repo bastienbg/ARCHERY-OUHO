@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Materials/Grass.mat.meta
 guid: 0a8a1906de938514b8cf7b61fee7f29a
+========
+guid: f892526c5ae70064abef20bf422eadf3
+>>>>>>>> terrain:Assets/Materials/castr.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000

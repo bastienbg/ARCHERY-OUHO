@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/LowlyPoly.meta
 guid: 8fe77adda4673bd4095ab7458717713a
+========
+guid: 094906967aaa5c644a042dd825fc47b3
+>>>>>>>> terrain:Assets/AureDevGames.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
