@@ -6,6 +6,10 @@ namespace FiveRabbitsDemo
 {
     public class AnimatorParametersChange : MonoBehaviour
     {
+
+        public Vector3 spawnAreaSize = new Vector3(10, 0, 10);
+        public Vector3 spawnAreaCenter;
+
         private Animator m_animator;
         private Vector3 m_targetPosition;
         private float m_speed = 2f; // Vitesse de déplacement
@@ -18,7 +22,7 @@ namespace FiveRabbitsDemo
             m_animator = GetComponent<Animator>();
             m_animator.SetBool("isRunning", true); // Commencer par l'animation de course
             StartCoroutine(MoveAround()); // Commencer la coroutine pour se déplacer
-            StartCoroutine(HandleDeath()); // Commencer la coroutine pour gérer la mort
+             
         }
 
         private IEnumerator MoveAround()
@@ -43,7 +47,13 @@ namespace FiveRabbitsDemo
         {
             // Déplacer le lapin vers la cible
             transform.position = Vector3.MoveTowards(transform.position, m_targetPosition, m_speed * Time.deltaTime);
-            
+
+            // Limiter la position dans la zone de spawn
+            float clampedX = Mathf.Clamp(transform.position.x, spawnAreaCenter.x - spawnAreaSize.x / 2, spawnAreaCenter.x + spawnAreaSize.x / 2);
+            float clampedZ = Mathf.Clamp(transform.position.z, spawnAreaCenter.z - spawnAreaSize.z / 2, spawnAreaCenter.z + spawnAreaSize.z / 2);
+
+            transform.position = new Vector3(clampedX, transform.position.y, clampedZ);
+
             // Faire tourner le lapin vers la direction du mouvement
             if (m_targetPosition != transform.position)
             {
@@ -56,17 +66,23 @@ namespace FiveRabbitsDemo
         private void SetNewTargetPosition()
         {
             // Choisir une nouvelle position aléatoire dans un certain rayon
-            m_targetPosition = new Vector3(Random.Range(-5f, 5f), transform.position.y, Random.Range(-5f, 5f));
+            float xPos = Random.Range(spawnAreaCenter.x - spawnAreaSize.x / 2, spawnAreaCenter.x + spawnAreaSize.x / 2);
+            float zPos = Random.Range(spawnAreaCenter.z - spawnAreaSize.z / 2, spawnAreaCenter.z + spawnAreaSize.z / 2);
+
+            m_targetPosition = new Vector3(xPos, transform.position.y, zPos);
         }
 
-        private IEnumerator HandleDeath()
-        {
-            // Attendre un certain temps avant de déclencher la mort
-            yield return new WaitForSeconds(10f); // Délai avant la mort
+        
 
-            m_isDead = true;
-            m_animator.SetBool("isDead", true);
-            m_animator.SetBool("isRunning", false);
+        public void Die()
+        {
+            if (!m_isDead)  // Vérifier que le lapin n'est pas déjà mort
+            {
+                m_isDead = true;
+                m_animator.SetBool("isDead", true);
+                m_animator.SetBool("isRunning", false);
+                StopAllCoroutines();  // Arrêter tout mouvement
+            }
         }
     }
 }

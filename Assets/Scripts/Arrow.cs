@@ -1,3 +1,4 @@
+using FiveRabbitsDemo;
 using System.Collections;
 using UnityEngine;
 
@@ -80,6 +81,17 @@ public class Arrow : MonoBehaviour
         if (Physics.Linecast(_lastPosition, tip.position, out RaycastHit hitInfo))
         {
             Debug.Log("Arrow collision detected at: " + hitInfo.point);
+
+            if (hitInfo.transform.CompareTag("Rabbit"))  
+            {
+                Debug.Log("Arrow hit a rabbit!");
+                AnimatorParametersChange rabbitScript = hitInfo.transform.GetComponent<AnimatorParametersChange>();
+                if (rabbitScript != null)
+                {
+                    rabbitScript.Die();  
+                }
+            }
+
             if (hitInfo.transform.gameObject.layer != 8)
             {
                 if (hitInfo.transform.TryGetComponent(out Rigidbody body))
