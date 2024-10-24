@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f769dc78e6251774481fbad85dbdf76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 20
   tip: {fileID: 1769337598482281036}
   particleSystem: {fileID: 467152710486494488}
   trailRenderer: {fileID: 1021253747931229720}
