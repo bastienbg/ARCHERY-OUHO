@@ -7,6 +7,7 @@ TagManager:
   - Left Hand
   - Right Hand
   - Bullet
+  - Arrow
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - Water
   - UI
   - Interactable
-  - 
+  - Arrow
   - 
   - 
   - 
