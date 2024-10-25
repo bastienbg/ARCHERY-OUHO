@@ -23,7 +23,7 @@ public class ButtonPressController : MonoBehaviour
         isPressed = false;
     }
 
-    // Appelé lorsque le bouton est pressé
+    
     private void OnTriggerEnter(Collider other)
     {
         if (!isPressed)
@@ -40,7 +40,7 @@ public class ButtonPressController : MonoBehaviour
     {
         if (other.gameObject == presser)
         {
-            button.transform.localPosition = new Vector3(0, 0.015f, 0);
+            button.transform.localPosition = new Vector3(0, 0.01f, 0);
             onRelease.Invoke();
             isPressed = false;
         }

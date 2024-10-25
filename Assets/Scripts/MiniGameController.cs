@@ -54,8 +54,8 @@ public class MiniGameController : MonoBehaviour
 
     void DestroyArrows()
     {
-        // Détruire toutes les flèches présentes dans la scène
-        foreach (GameObject arrow in arrows)
+        GameObject[] arrowsInScene = GameObject.FindGameObjectsWithTag("Arrow");
+        foreach (GameObject arrow in arrowsInScene)
         {
             Destroy(arrow);
         }
