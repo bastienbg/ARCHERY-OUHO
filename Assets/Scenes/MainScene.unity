@@ -1124,7 +1124,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105127103}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
 --- !u!1001 &112051451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1261,7 +1260,6 @@ PrefabInstance:
       addedObject: {fileID: 2040453848}
   m_SourcePrefab: {fileID: 100100000, guid: c4e389e44d96da64ea974ab237ce1a9a, type: 3}
 --- !u!1 &112886399
-=======
 --- !u!1 &105384809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,7 +1314,6 @@ BoxCollider:
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &143510774
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1740,7 +1737,6 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146318226}
   serializedVersion: 2
-<<<<<<< Updated upstream
   m_LocalRotation: {x: -0.19209862, y: 0.0049067666, z: -0.0020292266, w: 0.98136127}
   m_LocalPosition: {x: 0.0073, y: 0.0074, z: -0.0073}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1748,7 +1744,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 842740455}
   m_LocalEulerAnglesHint: {x: -22.149, y: 0.644, z: -0.363}
-=======
   m_Radius: 0.102780946
   m_Height: 0.94651335
   m_Direction: 1
@@ -1859,7 +1854,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &162353222
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,8 +3461,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301094300}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
-=======
 --- !u!1 &307128366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3605,7 +3597,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &317251354
 GameObject:
   m_ObjectHideFlags: 0
@@ -6478,7 +6469,6 @@ RectTransform:
   - {fileID: 77189829}
   m_Father: {fileID: 748680583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.5}
@@ -6486,15 +6476,12 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &549613209
 MonoBehaviour:
-=======
 --- !u!1 &507557004
 GameObject:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 549613207}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6503,7 +6490,6 @@ GameObject:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
-=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 507557005}
@@ -6552,7 +6538,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &559000117
 GameObject:
   m_ObjectHideFlags: 0
@@ -8566,7 +8551,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782785850}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
 --- !u!1001 &813834910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8656,9 +8640,7 @@ PrefabInstance:
       addedObject: {fileID: 1675419207}
   m_SourcePrefab: {fileID: 100100000, guid: 1b6d9920203cf204ca025db14635a195, type: 3}
 --- !u!1 &814466586
-=======
 --- !u!1 &783380082
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8666,23 +8648,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream
   - component: {fileID: 814466587}
   - component: {fileID: 814466588}
   m_Layer: 5
   m_Name: Text Area
-=======
   - component: {fileID: 783380083}
   - component: {fileID: 783380084}
   m_Layer: 0
   m_Name: 6points
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!224 &814466587
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8842,7 +8820,6 @@ Transform:
   m_PrefabInstance: {fileID: 842740453}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &842740456
-=======
 --- !u!4 &783380083
 Transform:
   m_ObjectHideFlags: 0
@@ -8859,17 +8836,13 @@ Transform:
   m_Father: {fileID: 431115645}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &783380084
->>>>>>> Stashed changes
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 842740454}
-=======
   m_GameObject: {fileID: 783380082}
->>>>>>> Stashed changes
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -8882,7 +8855,6 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-<<<<<<< Updated upstream
   m_Size: {x: 0.02, y: 0.04, z: 0.04}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &842740458
@@ -9081,10 +9053,8 @@ MonoBehaviour:
   m_AddDefaultGrabTransformers: 1
   leftAttachTransform: {fileID: 146318227}
   rightAttachTransform: {fileID: 905789517}
-=======
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1001 &849606986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9939,7 +9909,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_PhysicsTriggerInteraction: 1
-<<<<<<< Updated upstream
 --- !u!1 &929523415 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 146120, guid: c4e389e44d96da64ea974ab237ce1a9a,
@@ -9954,15 +9923,12 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &929523418
 MonoBehaviour:
-=======
 --- !u!1 &930647599
 GameObject:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 929523415}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -9976,7 +9942,6 @@ GameObject:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
-=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 930647600}
@@ -10024,7 +9989,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &951624848
 GameObject:
   m_ObjectHideFlags: 0
@@ -11208,9 +11172,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1001 &1045046098
-=======
 --- !u!1 &1042858738
 GameObject:
   m_ObjectHideFlags: 0
@@ -11450,7 +11412,6 @@ BoxCollider:
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1064814190
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -13155,7 +13116,6 @@ Transform:
   - {fileID: 1351552077}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1001 &1168724319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13232,7 +13192,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 643963553}
   m_SourcePrefab: {fileID: 100100000, guid: c737dd230724d61469e1c672cf47ed9e, type: 3}
-=======
 --- !u!1 &1169022491
 GameObject:
   m_ObjectHideFlags: 0
@@ -13287,7 +13246,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &1172459810
 GameObject:
   m_ObjectHideFlags: 0
@@ -15067,8 +15025,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367559093}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1385842573
 GameObject:
   m_ObjectHideFlags: 0
@@ -15266,7 +15222,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &1436377131
 GameObject:
   m_ObjectHideFlags: 0
@@ -15337,8 +15292,6 @@ Transform:
   - {fileID: 1143964856}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1447703604
 GameObject:
   m_ObjectHideFlags: 0
@@ -15521,7 +15474,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1001 &1488088616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18789,11 +18741,9 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1761161510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-=======
   m_GameObject: {fileID: 1759077522}
   serializedVersion: 2
   m_LocalRotation: {x: -0.15924694, y: -0.02758718, z: -0.6989399, w: 0.69667953}
@@ -18908,7 +18858,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.735}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19302,11 +19251,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809524900}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
 --- !u!1 &1812778693
-=======
 --- !u!1 &1824222111
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19314,34 +19260,27 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream
   - component: {fileID: 1812778694}
   - component: {fileID: 1812778695}
   m_Layer: 5
   m_Name: Text Area
-=======
   - component: {fileID: 1824222112}
   - component: {fileID: 1824222113}
   m_Layer: 0
   m_Name: 6points (3)
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!224 &1812778694
 RectTransform:
-=======
 --- !u!4 &1824222112
 Transform:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1812778693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -19359,7 +19298,6 @@ Transform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812778695
 MonoBehaviour:
-=======
   m_GameObject: {fileID: 1824222111}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0000000037252903, y: -0, z: -0.7138921, w: 0.70025575}
@@ -19371,12 +19309,10 @@ MonoBehaviour:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -91.105}
 --- !u!65 &1824222113
 BoxCollider:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1812778693}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -19385,7 +19321,6 @@ BoxCollider:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
-=======
   m_GameObject: {fileID: 1824222111}
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -19454,7 +19389,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &1831106711
 GameObject:
   m_ObjectHideFlags: 0
@@ -20905,14 +20839,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950756365}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
 --- !u!1 &1984150079 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1769337597633466025, guid: 54ba44d4ecd83324991be29cf49b127d,
     type: 3}
   m_PrefabInstance: {fileID: 1348699172}
   m_PrefabAsset: {fileID: 0}
-=======
 --- !u!1001 &1975736534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21069,7 +21001,6 @@ PrefabInstance:
       addedObject: {fileID: 2054302178}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f916224f445e2848aa5bd311b984479, type: 3}
->>>>>>> Stashed changes
 --- !u!1 &1988109233
 GameObject:
   m_ObjectHideFlags: 0
@@ -21814,7 +21745,6 @@ MonoBehaviour:
   rightGrabRay: {fileID: 976726547}
   leftDirectGrab: {fileID: 1244215813}
   rightDirectGrab: {fileID: 923832059}
-<<<<<<< Updated upstream
 --- !u!1 &2040453845 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 146120, guid: c4e389e44d96da64ea974ab237ce1a9a,
@@ -21829,15 +21759,12 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2040453848
 MonoBehaviour:
-=======
 --- !u!1 &2032261672
 GameObject:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 2040453845}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -21976,7 +21903,6 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2055458220
 MonoBehaviour:
-=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2032261673}
@@ -21990,12 +21916,10 @@ MonoBehaviour:
   m_IsActive: 1
 --- !u!4 &2032261673
 Transform:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 2055458218}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -22187,7 +22111,6 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &2055458223
-=======
   m_GameObject: {fileID: 2032261672}
   serializedVersion: 2
   m_LocalRotation: {x: 0.01323579, y: 0.0631465, z: 0.0017791709, w: 0.99791497}
@@ -22198,17 +22121,13 @@ Rigidbody:
   m_Father: {fileID: 431115645}
   m_LocalEulerAnglesHint: {x: 1.501, y: 7.245, z: 0.299}
 --- !u!65 &2032261674
->>>>>>> Stashed changes
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 2055458218}
-=======
   m_GameObject: {fileID: 2032261672}
->>>>>>> Stashed changes
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -22221,9 +22140,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-<<<<<<< Updated upstream
   m_Size: {x: 0.02, y: 0.04, z: 0.04}
-=======
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2054302177
@@ -22278,7 +22195,6 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
->>>>>>> Stashed changes
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2063012174
 GameObject:
@@ -22477,7 +22393,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-<<<<<<< Updated upstream
   m_Children: []
   m_Father: {fileID: 549613208}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22488,7 +22403,6 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073791055
 MonoBehaviour:
-=======
   m_Children:
   - {fileID: 184522246}
   - {fileID: 767585969}
@@ -22529,12 +22443,10 @@ Transform:
   m_LocalEulerAnglesHint: {x: 1.501, y: 7.245, z: 92.133}
 --- !u!65 &2092899411
 BoxCollider:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 2073791053}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -22646,7 +22558,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073791053}
   m_CullTransparentMesh: 1
-=======
   m_GameObject: {fileID: 2092899409}
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -22662,7 +22573,6 @@ CanvasRenderer:
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.1, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &2099554377
 GameObject:
   m_ObjectHideFlags: 0
@@ -22914,8 +22824,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -184}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &2122543253
 GameObject:
   m_ObjectHideFlags: 0
@@ -23105,7 +23013,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dc9f65eb0886bf42819fda44f1842ce, type: 3}
->>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
